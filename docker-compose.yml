@@ -1,0 +1,9 @@
+version: "3.9"
+
+services:
+  bot:
+    build: .
+    image: gitwakabot:latest
+    env_file:
+      - .env
+    command: ["node", "GitWakaBot.js"]
